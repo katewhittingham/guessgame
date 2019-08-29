@@ -31,8 +31,10 @@ a = abs(guess - n)
 while a != 0:
     if a < b:
         print("You are warmer!")
-    elif a > b:
+    if a > b:
         print("You are cooler!")
+    elif a == b:
+        print("You are the same temp!")
         
     guess = int(input("Guess again: "))
     b = a
